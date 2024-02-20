@@ -17,9 +17,9 @@
     "pod-install": "npx --yes pod-install"
   },
   "dependencies": {
+    "mapping-context-rn": "git+ssh://git@github.com-pessoal:williamcamasil/mapping-context-rn.git#dev",
     "react": "18.2.0",
-    "react-native": "0.71.7",
-    "mapping-context-rn": "git+ssh://git@github.com-pessoal:williamcamasil/mapping-context-rn.git#dev"
+    "react-native": "0.71.7"
   },
   "devDependencies": {
     "@tsconfig/react-native": "2.0.2",
