@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "mapping-context-rn": "git+ssh://git@github.com-pessoal:williamcamasil/mapping-context-rn.git#dev",
+    "mapping-dashboard-rn-app": "git+ssh://git@github.com-pessoal:williamcamasil/mapping-dashboard-rn-app.git#dev",
     "react": "18.2.0",
     "react-native": "0.71.7"
   },
