@@ -8014,11 +8014,11 @@ __metadata:
 
 "mapping-context-rn@git+ssh://git@github.com-pessoal:williamcamasil/mapping-context-rn.git#dev":
   version: 0.0.1
-  resolution: "mapping-context-rn@git+ssh://git@github.com-pessoal:williamcamasil/mapping-context-rn.git#commit=63a23d5c4e3f16ce7526112eda6b77f5c86a611b"
+  resolution: "mapping-context-rn@git+ssh://git@github.com-pessoal:williamcamasil/mapping-context-rn.git#commit=69720b9213deb6c392dba04df17eedd793a26939"
   dependencies:
     react: 18.2.0
     react-native: 0.71.7
-  checksum: c495224a9987bec894312140952518c44cc47619a0861c0f947845dfc0fc5c4c37f20ce0f7fe62bc6f06bf207bdd29f17623de694f5542d1d4ec1ca807da6ade
+  checksum: 2343211285005f2d69f5f65a4f42fe4ad98e772524d90766f4198593009e72848e7e893077cb9ed728bf59ac75f9308403990295c33281fe647842bbfd637456
   languageName: node
   linkType: hard
 
