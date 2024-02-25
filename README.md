@@ -21,3 +21,14 @@ Ordem de dependências para submódulos ao core:
 - [mapping-login-rn-app](https://github.com/williamcamasil/mapping-login-rn-app)
 - [mapping-dashboard-rn-app](https://github.com/williamcamasil/mapping-dashboard-rn-app)
 - [mapping-core-rn](https://github.com/williamcamasil/mapping-core-rn)
+
+### Pendencias | TODOs
+
+- [x] Instalar npx install-expo-modules
+- [ ] Instalar yarn add expo-device
+  * yarn add --dev @testing-library/react-native
+  * yarn add --dev @testing-library/jest-native
+    - yarn test
+    - yarn test --testPathPattern=HomeScreen
+      ou instalar a extensão Jest Runner
+    - yarn test --coverage

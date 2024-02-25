@@ -17,30 +17,36 @@
     "pod-install": "npx --yes pod-install"
   },
   "dependencies": {
+    "@react-navigation/native": "6.1.6",
+    "@react-navigation/stack": "6.2.2",
+    "expo": "48.0.12",
+    "expo-barcode-scanner": "12.3.2",
+    "expo-clipboard": "4.1.2",
+    "expo-document-picker": "11.2.2",
+    "expo-file-system": "15.2.2",
+    "expo-image-manipulator": "11.1.1",
+    "expo-image-picker": "14.1.1",
+    "expo-linear-gradient": "12.1.2",
+    "expo-secure-store": "12.1.1",
     "mapping-context-rn": "git+ssh://git@github.com-pessoal:williamcamasil/mapping-context-rn.git#dev",
     "mapping-dashboard-rn-app": "git+ssh://git@github.com-pessoal:williamcamasil/mapping-dashboard-rn-app.git#dev",
     "mapping-login-rn-app": "git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#dev",
     "mapping-style-guide-rn": "git+ssh://git@github.com-pessoal:williamcamasil/mapping-style-guide-rn.git#dev",
     "react": "18.2.0",
-    "react-native": "0.71.7"
+    "react-native": "0.71.7",
+    "react-native-svg": "13.7.0",
+    "react-native-svg-transformer": "1.0.0",
+    "react-test-renderer": "18.2.0"
   },
   "devDependencies": {
-    "@tsconfig/react-native": "2.0.2",
-    "@types/jest": "29.2.1",
     "@types/react": "18.0.24",
-    "@types/react-test-renderer": "18.0.0",
-    "babel-jest": "29.2.1",
     "babel-preset-rn-mapping": "git+ssh://git@github.com-pessoal:williamcamasil/babel-preset-rn-mapping.git#dev",
-    "eslint": "8.19.0",
     "eslint-config-rn-mapping": "git+ssh://git@github.com-pessoal:williamcamasil/eslint-config-rn-mapping.git#dev",
-    "jest": "29.2.1",
     "mapping-tools-rn": "git+ssh://git@github.com-pessoal:williamcamasil/mapping-tools-rn.git#dev",
-    "metro-react-native-babel-preset": "0.73.9",
-    "prettier": "2.4.1",
-    "react-test-renderer": "18.2.0",
+    "npm-run-all": "4.1.5",
     "typescript": "4.9.5"
   },
-  "jest": {
-    "preset": "react-native"
+  "resolutions": {
+    "@types/react": "18.0.38"
   }
 }

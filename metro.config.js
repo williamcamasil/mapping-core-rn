@@ -1,20 +1,28 @@
-/**
- * Metro configuration for React Native
- * https://github.com/facebook/react-native
- *
- * @format
- */
+/* eslint-disable import/no-extraneous-dependencies */
 
-// AO PUXAR O CÓDIGO PARA ESSE ARQUIVO DO PROJETO BASE DEU ERRO NA EXECUÇÃO DO PROJETO
-// TODO: Verificar como resolver o erro
+const { getDefaultConfig } = require('metro-config');
+const metroHandleSyncRequest = require('mapping-tools-rn/lib/utils/metro-handle-sync-request');
 
-module.exports = {
-  transformer: {
-    getTransformOptions: async () => ({
-      transform: {
-        experimentalImportSupport: false,
-        inlineRequires: true,
-      },
-    }),
-  },
-};
+module.exports = (async () => {
+  const {
+    resolver: { sourceExts, assetExts },
+  } = await getDefaultConfig();
+  return {
+    transformer: {
+      babelTransformerPath: require.resolve('react-native-svg-transformer'),
+      getTransformOptions: async () => ({
+        transform: {
+          experimentalImportSupport: false,
+          inlineRequires: true,
+        },
+      }),
+    },
+    resolver: {
+      assetExts: assetExts.filter(ext => ext !== 'svg'),
+      sourceExts: [...sourceExts, 'svg'],
+    },
+    server: {
+      enhanceMiddleware: metroHandleSyncRequest,
+    },
+  };
+})();
