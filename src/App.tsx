@@ -1,118 +1,69 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, { useCallback, useRef } from 'react';
+import { Platform, Text } from 'react-native';
 
-import React from 'react';
-import type {PropsWithChildren} from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+  AppConfigType, AppHolder, AppProvider, AuthTokenVariantType, AuthType, getNavigationHolder, useDidMount,
+} from 'mapping-context-rn';
+import { ModalProvider, ThemeProvider, useTheme } from 'mapping-style-guide-rn';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import appConfig from './config';
+import Navigation from './navigation';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+const App = () => {
+  const routeNameRef = useRef<string | undefined>();
+  const navigationHolder = getNavigationHolder();
 
-function Section({children, title}: SectionProps): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
+  const handleAppWillMount = useCallback(async (config: AppConfigType) => {
+    // eslint-disable-next-line no-console
+    console.log('handleAppWillMount', config);
+  }, []);
 
-function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  const handleAppMount = useCallback(async (config: AppConfigType) => {
+    // eslint-disable-next-line no-console
+    console.log('handleAppMount', config);
+  }, []);
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+  const handleAppDidMount = useCallback(async (config: AppConfigType, auth?: AuthType) => {
+    // eslint-disable-next-line no-console
+    console.log('handleAppDidMount', config, auth);
+  }, []);
+
+  const handleNavigationReady = useCallback(() => {
+    routeNameRef.current = navigationHolder.getRef()?.getCurrentRoute()?.name;
+  }, [navigationHolder]);
+
+  const handleLogout = useCallback((origin?: AuthTokenVariantType) => {
+    getNavigationHolder().reset({
+      index: 0,
+      routes: [{ name: 'LOGIN' }],
+    });
+  }, []);
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <AppProvider
+      config={appConfig}
+      onAppWillMount={handleAppWillMount}
+      onAppMount={handleAppMount}
+      onAppDidMount={handleAppDidMount}
+      onAppLogout={handleLogout}
+    >
+      <NavigationContainer
+        ref={navigationHolder.getRef()}
+        onReady={handleNavigationReady}
+      >
+        <ModalProvider>
+          <Navigation />
+        </ModalProvider>
+      </NavigationContainer>
+    </AppProvider>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+const AppWithTheme = () => (
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>
+);
 
-export default App;
+export default AppWithTheme;
