@@ -1,14 +1,13 @@
 import React from 'react';
 import {
-  PermissionsAndroid,
   Platform,
   Settings,
   StatusBar,
 } from 'react-native';
 
 import {
-  Store,
-  isResponseError, useDidMount, useNavigationHolder, withPropsInjection,
+  useDidMount,
+  useNavigationHolder,
 } from 'mapping-context-rn';
 import { Container, Text } from 'mapping-style-guide-rn';
 
