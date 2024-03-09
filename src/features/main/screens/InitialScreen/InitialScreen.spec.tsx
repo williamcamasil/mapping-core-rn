@@ -1,45 +1,44 @@
 import React from 'react';
 
-import { render } from '@testing-library/react-native';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
+import { StackNavigationOptions, createStackNavigator } from '@react-navigation/stack';
+import { render, waitFor, fireEvent } from '@testing-library/react-native';
+import { createNavigationMock } from 'mapping-context-rn';
 
 import InitialScreen from '.';
+import { setInitialAccessWelcomeScreen } from '../../stores';
+import { deleteInitialAccessWelcomeScreen } from '../../stores/initialAccess';
 
-jest.mock('react-native-device-info', () => {
-  const DeviceInfoActual = jest.requireActual('react-native-device-info/jest/react-native-device-info-mock');
-  const MockedDeviceInfo = {
-    ...DeviceInfoActual,
-    getVersion: jest.fn().mockReturnValue('8.8'),
-    getUniqueId: jest.fn().mockReturnValue('123'),
-    getSystemName: jest.fn().mockReturnValue('iOS'),
-  };
-  return {
-    ...MockedDeviceInfo,
-    default: MockedDeviceInfo,
-  };
-});
+const Stack = createStackNavigator();
 
-const mockLogAppOpen = jest.fn();
-const mockRequestPermission = jest.fn().mockResolvedValue(1);
-
-jest.mock('@react-native-firebase/analytics', () => () => ({
-  logAppOpen: mockLogAppOpen,
-}));
-
-jest.mock('@react-native-firebase/messaging', () => jest.fn(() => ({
-  requestPermission: mockRequestPermission,
-})));
-
-const renderScreen = () => {
-  const screen = render(<InitialScreen />);
-  jest.runAllTimers();
-  return screen;
+const screenOptions: StackNavigationOptions = {
+  headerShown: false,
 };
 
-jest.useFakeTimers();
+const renderScreen = () => render(
+  <NavigationContainer>
+    <Stack.Navigator screenOptions={screenOptions}>
+      <Stack.Screen name="InitialScreen" component={InitialScreen} />
+    </Stack.Navigator>
+  </NavigationContainer>,
+);
 
-describe('InitialScreen (Omni)', () => {
-  it('Should match snapshot', () => {
+describe('InitialScreen', () => {
+  it('Should show initial screen and navigate to login', async () => {
+    const navigationHolder = createNavigationMock();
     const screen = renderScreen();
-    expect(screen.toJSON()).toMatchSnapshot();
+    await screen.findByText('Bem vindo ao organo mapping');
+    screen.getByText('O aplicativo que ajuda a entender a hierarquia do seu time e informações de seus colegas de trabalho');
+    fireEvent.press(screen.getByText('Iniciar'));
+    await waitFor(() => { expect(navigationHolder.dispatch).toBeCalledWith(StackActions.replace('LOGIN')); });
+  });
+
+  it('Should not show initial screen and navigate to login', async () => {
+    await setInitialAccessWelcomeScreen({ hasSeenWelcomeScreen: true });
+    const navigationHolder = createNavigationMock();
+    const screen = renderScreen();
+    screen.queryByTestId('Bem vindo ao organo mapping');
+    await waitFor(() => { expect(navigationHolder.dispatch).toBeCalledWith(StackActions.replace('LOGIN')); });
+    await deleteInitialAccessWelcomeScreen();
   });
 });

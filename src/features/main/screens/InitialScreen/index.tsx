@@ -1,84 +1,49 @@
-import React from 'react';
-import {
-  Platform,
-  Settings,
-  StatusBar,
-} from 'react-native';
+import React, { useCallback, useState } from 'react';
 
 import {
   useDidMount,
   useNavigationHolder,
+  withPropsInjection,
 } from 'mapping-context-rn';
-import { Container, Text } from 'mapping-style-guide-rn';
+import { InformationContent } from 'mapping-style-guide-rn';
+import { Images } from '../../assets';
+import { getInitialAccessWelcomeScreen, setInitialAccessWelcomeScreen } from '../../stores';
 
 const InitialScreen = () => {
   const navigationHolder = useNavigationHolder();
+  const [isShowScreen, setIsShowScreen] = useState<boolean>(false);
 
-  const nextScreen = async () => {
-    navigationHolder.replace('LOGIN');
-  };
-
-  const setHasRunBefore = () => {
-    if (Platform.OS === 'ios' && !Settings.get('hasRunBefore')) {
-      Settings.set({ hasRunBefore: true });
+  const handleCheckInitialAccess = useCallback(async () => {
+    const initialAccessWelcomeScreen = await getInitialAccessWelcomeScreen();
+    setIsShowScreen(!initialAccessWelcomeScreen?.hasSeenWelcomeScreen);
+    if (initialAccessWelcomeScreen?.hasSeenWelcomeScreen) {
+      navigationHolder.replace('LOGIN');
     }
-  };
+  }, []);
 
-  const initApp = async () => {
-    setHasRunBefore();
-    // const isStorageInitialized = await startStorage();
-    // if (isStorageInitialized) {
-    //   const time = setTimeout(() => {
-    //     nextScreen();
-    //     clearTimeout(time);
-    //   }, 1500);
-    //   return;
-    // }
+  useDidMount(() => { handleCheckInitialAccess(); });
 
+  const navigateToMainApp = () => {
+    setInitialAccessWelcomeScreen({ hasSeenWelcomeScreen: true });
     navigationHolder.replace('LOGIN');
-  };
+  }
 
-  const addZerosAfterDot = (version: string): number => {
-    const [minor, patch] = version.split('.');
-    const formattedPatch = patch.padStart(3, '0');
-    const formattedVersion = `${minor}.${formattedPatch}`;
-    return Number(formattedVersion);
-  };
-
-  const handleVersions = (appVersion: string, storeAppVersion: string) => {
-    const formattedAppVersion = addZerosAfterDot(appVersion);
-    const formattedStoreVersion = addZerosAfterDot(storeAppVersion);
-
-    if (formattedAppVersion < formattedStoreVersion) {
-      navigationHolder.replace('AppUpdateScreen');
-      return;
-    }
-
-    initApp();
-  };
-
-  // const checkApplicationVersion = async () => {
-  //   if (isResponseError(superAppVersionResponse)) {
-  //     initApp();
-  //     return;
-  //   }
-
-  //   const storeVersion = phoneModel === 'iOS' ? superAppVersionResponse.data.Ios : superAppVersionResponse.data.Android;
-  //   handleVersions(appVersionNumber, storeVersion);
-  // };
-
-  useDidMount(() => {
-    // checkApplicationVersion();
-    navigationHolder.replace('LOGIN');
-  });
+  const renderContent = () => {
+    if (!isShowScreen) return null;
+    return (
+      <InformationContent
+        header={<Images.MappingApp />}
+        title={'Bem vindo ao organo mapping'}
+        description={'O aplicativo que ajuda a entender a hierarquia do seu time e informações de seus colegas de trabalho'}
+        primaryButtonName="Iniciar"
+        onPressPrimary={navigateToMainApp}
+      />
+    );
+  }
 
   return (
-    <Container alignItems="center" justifyContent="center">
-      <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
-      {/* <CompanyIcon /> */}
-      <Text>Ola mundo</Text>
-    </Container>
+    renderContent()
   );
 };
 
-export default InitialScreen;
+export default withPropsInjection(InitialScreen, {});
