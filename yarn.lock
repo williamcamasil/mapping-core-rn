@@ -3424,20 +3424,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-google-signin/google-signin@npm:11.0.0":
-  version: 11.0.0
-  resolution: "@react-native-google-signin/google-signin@npm:11.0.0"
-  peerDependencies:
-    expo: ">=47.0.0"
-    react: "*"
-    react-native: "*"
-  peerDependenciesMeta:
-    expo:
-      optional: true
-  checksum: 58651579f2b23bc73b17510fc3d621a72d9a079778deec08aa74d421b5cfa9766ae8395b9c59dfececf61149461f369d1fedebee3635bd0e4c2a1fda7b89d3ef
-  languageName: node
-  linkType: hard
-
 "@react-native-masked-view/masked-view@npm:0.2.8":
   version: 0.2.8
   resolution: "@react-native-masked-view/masked-view@npm:0.2.8"
@@ -10524,7 +10510,6 @@ __metadata:
     "@react-native-async-storage/async-storage": 1.17.7
     "@react-native-firebase/app": 18.0.0
     "@react-native-firebase/auth": 18.0.0
-    "@react-native-google-signin/google-signin": 11.0.0
     "@react-native-masked-view/masked-view": 0.2.8
     "@react-navigation/native": 6.1.6
     "@react-navigation/stack": 6.2.2
@@ -10566,23 +10551,23 @@ __metadata:
 
 "mapping-dashboard-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-dashboard-rn-app.git#dev":
   version: 0.0.1
-  resolution: "mapping-dashboard-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-dashboard-rn-app.git#commit=d9c9d52ff8da916a111e5dc5fe3dbd0071acdda7"
+  resolution: "mapping-dashboard-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-dashboard-rn-app.git#commit=d89204d775452f01838a2f6da7218e82bd77005b"
   dependencies:
     "@react-navigation/native": 6.1.6
     "@react-navigation/stack": 6.2.2
     axios: 0.21.4
-  checksum: 8ce770a29a0afcb7bbb70f5588fc50e64bcc0c762c984112bf6b7103ab66ac93eb3217daf24c5dc16eb3f542999f538af65b6884ad612f0c796196250352d08f
+  checksum: f44d74c8302f26861bfd56370f4ee6b9214c6d1e47644c0f1acb24a08b3f07ff24ce62391531e905535b074e673a4c9f8f2b3a40a0b732ee9ed8b9f07ef5e12c
   languageName: node
   linkType: hard
 
 "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#dev":
   version: 0.0.1
-  resolution: "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#commit=75ae0e3d99d44e1dd5e2c3e067b4e558e9a500f4"
+  resolution: "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#commit=c6bac179e84099044568360d41f22a7a36c19cc0"
   dependencies:
     "@react-navigation/native": 6.1.6
     "@react-navigation/stack": 6.2.2
     axios: 0.21.4
-  checksum: c6ae9149a74c0156091a00fcb5d5eb68d1cf4d29a93895e9022a3f3eb6f4adc4cb298703fbdb4b720ab7d8f490902760abb2cbf17d8e6e2d8249edfbe3db5fd2
+  checksum: 1c464ce12127ed18458ac55dd82a47ae91b470ba17d083eacd1d107958720f0480e83921cc26a28182c0b6a187369c8a0b3d678e81c6965e0acc18d6e0a11486
   languageName: node
   linkType: hard
 
