@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "756364528893",
+    "project_id": "super-app-mapping-master",
+    "storage_bucket": "super-app-mapping-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756364528893:android:26b13ff94d485594700294",
+        "android_client_info": {
+          "package_name": "com.mappingcorern"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjTCdfji2IcoY-mS7yQMYy2AMCnoxwh5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

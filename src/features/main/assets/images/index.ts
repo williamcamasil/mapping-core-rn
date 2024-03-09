@@ -1,1 +1,1 @@
-export { default as AppUpdate } from './AppUpdate';
+export { default as MappingApp } from './MappingApp';

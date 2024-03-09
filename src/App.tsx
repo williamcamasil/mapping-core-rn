@@ -1,11 +1,10 @@
 import React, { useCallback, useRef } from 'react';
-import { Platform, Text } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import {
-  AppConfigType, AppHolder, AppProvider, AuthTokenVariantType, AuthType, getNavigationHolder, useDidMount,
+  AppConfigType, AppProvider, AuthType, getNavigationHolder,
 } from 'mapping-context-rn';
-import { ModalProvider, ThemeProvider, useTheme } from 'mapping-style-guide-rn';
+import { ModalProvider, ThemeProvider } from 'mapping-style-guide-rn';
 
 import appConfig from './config';
 import Navigation from './navigation';
@@ -33,20 +32,12 @@ const App = () => {
     routeNameRef.current = navigationHolder.getRef()?.getCurrentRoute()?.name;
   }, [navigationHolder]);
 
-  const handleLogout = useCallback((origin?: AuthTokenVariantType) => {
-    getNavigationHolder().reset({
-      index: 0,
-      routes: [{ name: 'LOGIN' }],
-    });
-  }, []);
-
   return (
     <AppProvider
       config={appConfig}
       onAppWillMount={handleAppWillMount}
       onAppMount={handleAppMount}
       onAppDidMount={handleAppDidMount}
-      onAppLogout={handleLogout}
     >
       <NavigationContainer
         ref={navigationHolder.getRef()}
