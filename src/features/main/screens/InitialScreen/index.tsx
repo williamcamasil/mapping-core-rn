@@ -32,6 +32,7 @@ const InitialScreen = () => {
     //   console.log('error', error);
     // });
     // setInitialAccessWelcomeScreen({ hasSeenWelcomeScreen: true });
+    setInitialAccessWelcomeScreen({ hasSeenWelcomeScreen: true });
     navigationHolder.replace('LOGIN');
   }
 
