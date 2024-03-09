@@ -10577,12 +10577,12 @@ __metadata:
 
 "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#dev":
   version: 0.0.1
-  resolution: "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#commit=8856bb20cdb7a80553f482ea07ee6a62bba65778"
+  resolution: "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#commit=75ae0e3d99d44e1dd5e2c3e067b4e558e9a500f4"
   dependencies:
     "@react-navigation/native": 6.1.6
     "@react-navigation/stack": 6.2.2
     axios: 0.21.4
-  checksum: 90df7b5b376dcb81cba1a38c12c1d57d13b2bae8251a2876f8af6850b4994103f307fea1c1c4588a0db0a800dd778b18dcb80c8a07cde5df1a525f3ea2266c29
+  checksum: c6ae9149a74c0156091a00fcb5d5eb68d1cf4d29a93895e9022a3f3eb6f4adc4cb298703fbdb4b720ab7d8f490902760abb2cbf17d8e6e2d8249edfbe3db5fd2
   languageName: node
   linkType: hard
 
