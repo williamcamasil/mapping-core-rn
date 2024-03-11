@@ -4778,7 +4778,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"available-typed-arrays@npm:^1.0.6, available-typed-arrays@npm:^1.0.7":
+"available-typed-arrays@npm:^1.0.7":
   version: 1.0.7
   resolution: "available-typed-arrays@npm:1.0.7"
   dependencies:
@@ -8455,7 +8455,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"has-tostringtag@npm:^1.0.0, has-tostringtag@npm:^1.0.1, has-tostringtag@npm:^1.0.2":
+"has-tostringtag@npm:^1.0.0, has-tostringtag@npm:^1.0.2":
   version: 1.0.2
   resolution: "has-tostringtag@npm:1.0.2"
   dependencies:
@@ -10571,12 +10571,12 @@ __metadata:
 
 "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#master":
   version: 0.0.1
-  resolution: "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#commit=2149d11cb875c0b8be57fbe0591565e2ad9f0fef"
+  resolution: "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#commit=dbe4ccb21ed3481898b82e09788d7dbdb04b5156"
   dependencies:
     "@react-navigation/native": 6.1.6
     "@react-navigation/stack": 6.2.2
     axios: 0.21.4
-  checksum: 37e0a6c8d3ee49183c43369d88721939e6c0851d27a710d74b5d576a5cd6d25729191c6b6305fed82dbf8a35500585440d83ee834f4f61f2a164ad0156f312dc
+  checksum: 60e7df4f0de9ef498de498a9ed049f23bb9b683a8b3bab80fc58063a4e0e3cd8489a2b925d64ba1a6f5e95f97166c2b52e1fba9c33ec0b0ee7e71b40e9ba0a50
   languageName: node
   linkType: hard
 
@@ -15330,15 +15330,15 @@ __metadata:
   linkType: hard
 
 "which-typed-array@npm:^1.1.14, which-typed-array@npm:^1.1.9":
-  version: 1.1.14
-  resolution: "which-typed-array@npm:1.1.14"
+  version: 1.1.15
+  resolution: "which-typed-array@npm:1.1.15"
   dependencies:
-    available-typed-arrays: ^1.0.6
-    call-bind: ^1.0.5
+    available-typed-arrays: ^1.0.7
+    call-bind: ^1.0.7
     for-each: ^0.3.3
     gopd: ^1.0.1
-    has-tostringtag: ^1.0.1
-  checksum: efe30c143c58630dde8ab96f9330e20165bacd77ca843c602b510120a415415573bcdef3ccbc30a0e5aaf20f257360cfe24712aea0008f149ce5bb99834c0c0b
+    has-tostringtag: ^1.0.2
+  checksum: 65227dcbfadf5677aacc43ec84356d17b5500cb8b8753059bb4397de5cd0c2de681d24e1a7bd575633f976a95f88233abfd6549c2105ef4ebd58af8aa1807c75
   languageName: node
   linkType: hard
 
