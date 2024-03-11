@@ -5,3 +5,4 @@
 ## Erro para executar app com hermes configurado
 
 ## Erro de persistência de dados no ios
+

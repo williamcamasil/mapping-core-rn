@@ -50,7 +50,7 @@ __Descrição:__ Módulos de alto nível não devem depender de módulos de baix
 
 __Utilizado no app:__
   - componentes do style-guide
-  - configurações e abstrações do context
+  - configurações e abstrações do context 
 
 ### Utilizar uma arquitetura que faça com que o código seja independente de framework (reutilização do código)
 - Tudo que tem base em node (funções java script, serviços com chamadas, adapters e abstrações das classes)
