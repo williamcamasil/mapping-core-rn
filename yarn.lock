@@ -6819,17 +6819,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"escape-string-regexp@npm:2.0.0, escape-string-regexp@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "escape-string-regexp@npm:2.0.0"
+  checksum: 9f8a2d5743677c16e85c810e3024d54f0c8dea6424fad3c79ef6666e81dd0846f7437f5e729dfcdac8981bc9e5294c39b4580814d114076b8d36318f46ae4395
+  languageName: node
+  linkType: hard
+
 "escape-string-regexp@npm:^1.0.5":
   version: 1.0.5
   resolution: "escape-string-regexp@npm:1.0.5"
   checksum: 6092fda75c63b110c706b6a9bfde8a612ad595b628f0bd2147eea1d3406723020810e591effc7db1da91d80a71a737a313567c5abb3813e8d9c71f4aa595b410
-  languageName: node
-  linkType: hard
-
-"escape-string-regexp@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "escape-string-regexp@npm:2.0.0"
-  checksum: 9f8a2d5743677c16e85c810e3024d54f0c8dea6424fad3c79ef6666e81dd0846f7437f5e729dfcdac8981bc9e5294c39b4580814d114076b8d36318f46ae4395
   languageName: node
   linkType: hard
 
@@ -6899,7 +6899,7 @@ __metadata:
 
 "eslint-config-rn-mapping@git+ssh://git@github.com-pessoal:williamcamasil/eslint-config-rn-mapping.git#dev":
   version: 1.0.0
-  resolution: "eslint-config-rn-mapping@git+ssh://git@github.com-pessoal:williamcamasil/eslint-config-rn-mapping.git#commit=f2b4c7e2fec2ad167d1cd49c23034c66d6300d25"
+  resolution: "eslint-config-rn-mapping@git+ssh://git@github.com-pessoal:williamcamasil/eslint-config-rn-mapping.git#commit=52482a9f98a623e6e2797bbeb4e575dba20433e9"
   dependencies:
     "@react-native-community/eslint-config": 3.2.0
     eslint: 8.39.0
@@ -6910,7 +6910,7 @@ __metadata:
     eslint-plugin-jsx-a11y: 6.7.1
     eslint-plugin-react-perf: 3.3.1
     eslint-plugin-testing-library: 5.10.3
-  checksum: 0ae952f24ef4775ff7f966f27669e9b82747439e6285414d8c6be80ba6ed49609bbec3df56a424e267e941438986cd299a9a65272c1053e53983141a6250c47d
+  checksum: 8063ce013ebe5745c04e92a4c9563c5b5b8efd30abcb211704bfcfe227b9bce6f78fc6349c93f5dc57d30f0405a2699d76e676da0a5d48b2bc945e36466f2fb6
   languageName: node
   linkType: hard
 
@@ -7606,6 +7606,13 @@ __metadata:
   version: 3.1.1
   resolution: "exponential-backoff@npm:3.1.1"
   checksum: 3d21519a4f8207c99f7457287291316306255a328770d320b401114ec8481986e4e467e854cb9914dd965e0a1ca810a23ccb559c642c88f4c7f55c55778a9b48
+  languageName: node
+  linkType: hard
+
+"fast-base64-decode@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "fast-base64-decode@npm:1.0.0"
+  checksum: 4c59eb1775a7f132333f296c5082476fdcc8f58d023c42ed6d378d2e2da4c328c7a71562f271181a725dd17cdaa8f2805346cc330cdbad3b8e4b9751508bd0a3
   languageName: node
   linkType: hard
 
@@ -8749,7 +8756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"invariant@npm:^2.2.2, invariant@npm:^2.2.4":
+"invariant@npm:2.2.4, invariant@npm:^2.2.2, invariant@npm:^2.2.4":
   version: 2.2.4
   resolution: "invariant@npm:2.2.4"
   dependencies:
@@ -10482,7 +10489,7 @@ __metadata:
 
 "mapping-context-rn@git+ssh://git@github.com-pessoal:williamcamasil/mapping-context-rn.git#dev":
   version: 0.0.1
-  resolution: "mapping-context-rn@git+ssh://git@github.com-pessoal:williamcamasil/mapping-context-rn.git#commit=0564a57af42c0a36fdee304dfcb2b56a2c6478b1"
+  resolution: "mapping-context-rn@git+ssh://git@github.com-pessoal:williamcamasil/mapping-context-rn.git#commit=60ac41dd93fb2030a504bff22c75208e5042fb49"
   dependencies:
     "@react-navigation/native": 6.1.6
     "@react-navigation/stack": 6.2.2
@@ -10499,7 +10506,7 @@ __metadata:
     react-native-biometrics: 3.0.1
     react-native-safe-area-context: 4.5.1
     reactotron-react-native: 5.0.2
-  checksum: f9081655a4510e0af9c5178f6d0f1302ce392757def5743948d12b6640f13c82bae5cbd3437dffc80cccbca05d550b122ff5fcb5d7959c73e45578469cea0bf6
+  checksum: ffc43bf09ec20aa8efda2b7f8751dafb30e9b16208b38c2bf5b7df5e5380110b6f31314f560c63b3c3c403106430321dc26d7815c89d324175587543579de13c
   languageName: node
   linkType: hard
 
@@ -10536,9 +10543,11 @@ __metadata:
     react-native: 0.71.7
     react-native-device-info: 9.0.2
     react-native-gesture-handler: 2.9.0
+    react-native-get-random-values: 1.9.0
     react-native-safe-area-context: 4.5.1
     react-native-svg: 13.7.0
     react-native-svg-transformer: 1.0.0
+    react-native-webview: 11.23.0
     react-native-zip-archive: 6.0.8
     react-redux: 8.0.2
     react-test-renderer: 18.2.0
@@ -10551,29 +10560,29 @@ __metadata:
 
 "mapping-dashboard-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-dashboard-rn-app.git#dev":
   version: 0.0.1
-  resolution: "mapping-dashboard-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-dashboard-rn-app.git#commit=d89204d775452f01838a2f6da7218e82bd77005b"
+  resolution: "mapping-dashboard-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-dashboard-rn-app.git#commit=293f7394c3b4062a6606b446cea8fe069796f37e"
   dependencies:
     "@react-navigation/native": 6.1.6
     "@react-navigation/stack": 6.2.2
     axios: 0.21.4
-  checksum: f44d74c8302f26861bfd56370f4ee6b9214c6d1e47644c0f1acb24a08b3f07ff24ce62391531e905535b074e673a4c9f8f2b3a40a0b732ee9ed8b9f07ef5e12c
+  checksum: 4b88caef0750333665e6e1e0d23a1ecd5023f07523142ab986686baae1fe93ba498a982fed555f7b2aa8e4596781d82b1cd3979b1ac5876485b37bf6ff49935f
   languageName: node
   linkType: hard
 
 "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#dev":
   version: 0.0.1
-  resolution: "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#commit=c6bac179e84099044568360d41f22a7a36c19cc0"
+  resolution: "mapping-login-rn-app@git+ssh://git@github.com-pessoal:williamcamasil/mapping-login-rn-app.git#commit=c11efc08815d6aa3015db7ab99fa8c4a997b62b8"
   dependencies:
     "@react-navigation/native": 6.1.6
     "@react-navigation/stack": 6.2.2
     axios: 0.21.4
-  checksum: 1c464ce12127ed18458ac55dd82a47ae91b470ba17d083eacd1d107958720f0480e83921cc26a28182c0b6a187369c8a0b3d678e81c6965e0acc18d6e0a11486
+  checksum: 9c0ed42d64158bc0fd251290f6ec7bd2ba84d44e89cd5a270e6c7b21d2e8c3c8494068cb9b34eb89799139f24f90a91e5fd8e195e8895d8a9d9beadcaa0815a3
   languageName: node
   linkType: hard
 
 "mapping-style-guide-rn@git+ssh://git@github.com-pessoal:williamcamasil/mapping-style-guide-rn.git#dev":
   version: 0.0.1
-  resolution: "mapping-style-guide-rn@git+ssh://git@github.com-pessoal:williamcamasil/mapping-style-guide-rn.git#commit=3ba2274291d47632333910acea31774b7975d6da"
+  resolution: "mapping-style-guide-rn@git+ssh://git@github.com-pessoal:williamcamasil/mapping-style-guide-rn.git#commit=95bec4fe761dda5a179b1c78c515c0eb87f2e29a"
   dependencies:
     "@callstack/react-theme-provider": 3.0.7
     "@types/color": 3.0.3
@@ -10583,7 +10592,7 @@ __metadata:
     react-final-form: 6.5.9
     react-native-calendars: 1.1299.0
     react-native-shimmer-placeholder: 2.0.9
-  checksum: 12e80baa4e5855d445044c6683a81b91e56ff76ee1185a1b5866c388e0d72c8b6e76f845058be98e7535974da5ec2d28bfcd188b91c16d641610a1080f60d372
+  checksum: 7b04872eba178a01cd42234814f9cf630c2c83a92b7443ad1df21c071151c95a9492499e6cbbd0040eaec4a6b211c5bcf1d9168dd7141b1c78adf10e22232524
   languageName: node
   linkType: hard
 
@@ -12707,6 +12716,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-get-random-values@npm:1.9.0":
+  version: 1.9.0
+  resolution: "react-native-get-random-values@npm:1.9.0"
+  dependencies:
+    fast-base64-decode: ^1.0.0
+  peerDependencies:
+    react-native: ">=0.56"
+  checksum: 4c7fb4fa674c6e76e6fcbe29366aa2f0bae194a2ae3fc4ea0d5e31534553b03d5d77b3217773b6ef2336feedd3cc076fd70af55f6b577daa2d0f133c005aaf2a
+  languageName: node
+  linkType: hard
+
 "react-native-gradle-plugin@npm:^0.71.17":
   version: 0.71.19
   resolution: "react-native-gradle-plugin@npm:0.71.19"
@@ -12776,6 +12796,19 @@ __metadata:
   version: 1.0.5
   resolution: "react-native-swipe-gestures@npm:1.0.5"
   checksum: d637bc40baa50fa0ce3b6cf2b494efeceaea03cc3875cb7cf7d76922914a21d5e6b098d4a084fb291ce61bfbb0a241c03cff24b15bebf0cfae1c146f4ad10d92
+  languageName: node
+  linkType: hard
+
+"react-native-webview@npm:11.23.0":
+  version: 11.23.0
+  resolution: "react-native-webview@npm:11.23.0"
+  dependencies:
+    escape-string-regexp: 2.0.0
+    invariant: 2.2.4
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 2db9fabd79a604436e8cac22cd6ceb62a790e4db71bc65baa23f5e1499b4d781c867fec41c6d7983da46ed5689e2241360025c97522d191332092df08e384e12
   languageName: node
   linkType: hard
 

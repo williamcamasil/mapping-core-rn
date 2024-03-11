@@ -8,7 +8,6 @@ import {
 import { InformationContent } from 'mapping-style-guide-rn';
 import { Images } from '../../assets';
 import { getInitialAccessWelcomeScreen, setInitialAccessWelcomeScreen } from '../../stores';
-// import auth from '@react-native-firebase/auth';
 
 const InitialScreen = () => {
   const navigationHolder = useNavigationHolder();
@@ -25,13 +24,6 @@ const InitialScreen = () => {
   useDidMount(() => { handleCheckInitialAccess(); });
 
   const navigateToMainApp = () => {
-    // auth().createUserWithEmailAndPassword('williamcamargo@gmail.com', '123456').then(data => {
-    //   console.log('data', data);
-
-    // }).catch(error => {
-    //   console.log('error', error);
-    // });
-    // setInitialAccessWelcomeScreen({ hasSeenWelcomeScreen: true });
     setInitialAccessWelcomeScreen({ hasSeenWelcomeScreen: true });
     navigationHolder.replace('LOGIN');
   }

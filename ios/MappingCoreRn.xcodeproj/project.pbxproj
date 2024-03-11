@@ -16,6 +16,7 @@
 		6938665D2B8EB29F00C6A473 /* AvertaCY-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6938665A2B8EB29F00C6A473 /* AvertaCY-Regular.ttf */; };
 		6938665E2B8EB29F00C6A473 /* AvertaCY-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6938665B2B8EB29F00C6A473 /* AvertaCY-Bold.ttf */; };
 		6938665F2B8EB29F00C6A473 /* AvertaCY-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6938665C2B8EB29F00C6A473 /* AvertaCY-Semibold.ttf */; };
+		69A7951B2B9E8FD800A9DD56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69A7951A2B9E8FD800A9DD56 /* GoogleService-Info.plist */; };
 		7699B88040F8A987B510C191 /* libPods-MappingCoreRn-MappingCoreRnTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MappingCoreRn-MappingCoreRnTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		F0F422300F6E74B84B82F030 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9763DA4282B2B12536DB8D9E /* ExpoModulesProvider.swift */; };
@@ -50,6 +51,7 @@
 		6938665B2B8EB29F00C6A473 /* AvertaCY-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AvertaCY-Bold.ttf"; path = "../assets/fonts/AvertaCY-Bold.ttf"; sourceTree = "<group>"; };
 		6938665C2B8EB29F00C6A473 /* AvertaCY-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AvertaCY-Semibold.ttf"; path = "../assets/fonts/AvertaCY-Semibold.ttf"; sourceTree = "<group>"; };
 		6988BE8A2B9C9842003FC393 /* hermes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = hermes.xcframework; path = "Pods/hermes-engine/destroot/Library/Frameworks/universal/hermes.xcframework"; sourceTree = "<group>"; };
+		69A7951A2B9E8FD800A9DD56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MappingCoreRn/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		832D9FAF1D4BA3962F314FB8 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-MappingCoreRn/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-MappingCoreRn-MappingCoreRnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MappingCoreRn-MappingCoreRnTests.release.xcconfig"; path = "Target Support Files/Pods-MappingCoreRn-MappingCoreRnTests/Pods-MappingCoreRn-MappingCoreRnTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				69A7951A2B9E8FD800A9DD56 /* GoogleService-Info.plist */,
 				6938665B2B8EB29F00C6A473 /* AvertaCY-Bold.ttf */,
 				6938665A2B8EB29F00C6A473 /* AvertaCY-Regular.ttf */,
 				6938665C2B8EB29F00C6A473 /* AvertaCY-Semibold.ttf */,
@@ -295,6 +298,7 @@
 				6938665F2B8EB29F00C6A473 /* AvertaCY-Semibold.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				69A7951B2B9E8FD800A9DD56 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

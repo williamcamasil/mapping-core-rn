@@ -79,3 +79,17 @@ Repositórios utilizados no desenvolvimento da aplicação
 
   - [Figma e design](https://www.figma.com/file/y427586uuFXcvODlMgNTtU/MySpace_Desafio?type=design&node-id=96-529&mode=design&t=B4YIplPTnrZy1MV8-0)
   - [Backlog](https://db1global-my.sharepoint.com/:x:/g/personal/william_camargo_db1_com_br/EXWyP3xPMpxAkyHBB6o8fz0B3Y4Gkg_Jx21Oa9E4-D7Knw?e=D0Kpdg)
+
+## Aplicação em tempo real
+
+### Android usuário padrão
+![android](./assets/gif/core_android.gif)
+
+### Android usuário admin
+![android](./assets/gif/core_android_admin.gif)
+
+### iOS
+![ios](./assets/gif/core_ios.gif)
+
+## Cobertura do código
+![testes](./assets/img/testes.png)
