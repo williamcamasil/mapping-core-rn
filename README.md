@@ -35,9 +35,9 @@ Aplicação funcional, módulos separadas e funcionando de maneira independente 
 ### Consequências positivas
 
 - Desenvolvimento e atualizações independente
+- Base de código unificada (Android e iOS)
 - Reusabilidade de código
 - Escalabilidade
-- Tecnologias diversificadas
 - Isolado de falhas
 - Colaboração entre as equipes
 
