@@ -5,7 +5,14 @@
 - Executor: William Camargo
 - Data: 12/03/2024
 
-**Contexto:** O Myspace tem se tornado uma aplicação cada vez mais utilizada, a qual a manutenção, desenvolvimento de novas features e distribuição das tarefas entre as equipes tem se mostrado verdadeiros desafios. Para manter a qualidade, performance e expansão de novas funcionalidades, julga se necessário alterar sua arquitetura para uma arquitetura em camadas, semelhante ao de microfrontends, a qual permitirá a colaboração entre as equipes de maneira mais ágil e fluída.
+## Utilitários
+
+- [Figma e design](https://www.figma.com/file/y427586uuFXcvODlMgNTtU/MySpace_Desafio?type=design&node-id=96-529&mode=design&t=B4YIplPTnrZy1MV8-0)
+- [Backlog](https://db1global-my.sharepoint.com/:x:/g/personal/william_camargo_db1_com_br/EXWyP3xPMpxAkyHBB6o8fz0B3Y4Gkg_Jx21Oa9E4-D7Knw?e=D0Kpdg)
+
+## Contexto
+
+O Myspace tem se tornado uma aplicação cada vez mais utilizada, a qual a manutenção, desenvolvimento de novas features e distribuição das tarefas entre as equipes tem se mostrado verdadeiros desafios. Para manter a qualidade, performance e expansão de novas funcionalidades, julga se necessário alterar sua arquitetura para uma arquitetura em camadas, semelhante ao de microfrontends, a qual permitirá a colaboração entre as equipes de maneira mais ágil e fluída.
 
 ## Declaração do desafio
 
@@ -23,22 +30,22 @@ Desenvolver uma aplicação utilizando uma arquitetura baseada em microfrontends
 
 ## Resultado
 
-Aplicação funcional, módulos separadas e funcionando de maneira independente a qual permite o desenvolvimento das funcionalidades de forma padronizada.
+Aplicação funcional, módulos separadas e funcionando de maneira independente a qual permite o desenvolvimento das funcionalidades de forma padronizada com fluides, performance, e manutenível.
 
 ### Consequências positivas
 
-- Aplicação fluída
-- Performática
-- Manutenível
-- Escalável
-- Padronizada
-- Testes unitários e de integração
-- Código limpo
+- Desenvolvimento e atualizações independente
+- Reusabilidade de código
+- Escalabilidade
+- Tecnologias diversificadas
+- Isolado de falhas
+- Colaboração entre as equipes
 
 ### Consequências negativas
 
-- Arquitetura complexa de ser criada
-- TODO: adicionar mais itens
+- Complexidade inicial no seu desenvolvimento
+- Sincronização das versões
+- Aprendizado e curva de adoção
 
 ## Observações adicionais sobre a arquitetura escolhida
 
@@ -75,11 +82,6 @@ Repositórios utilizados no desenvolvimento da aplicação
 - [mapping-core-rn](https://github.com/williamcamasil/mapping-core-rn)
   - **Objetivo:** é o repositório central do SuperApp, responsável por unir todas as dependências, funcionalidades e configurações, permitindo ter acesso total a aplicação. Possui todos os repositórios MiniApp submódulo e utilitários instalados como dependência.
 
-  ## Utilitários
-
-  - [Figma e design](https://www.figma.com/file/y427586uuFXcvODlMgNTtU/MySpace_Desafio?type=design&node-id=96-529&mode=design&t=B4YIplPTnrZy1MV8-0)
-  - [Backlog](https://db1global-my.sharepoint.com/:x:/g/personal/william_camargo_db1_com_br/EXWyP3xPMpxAkyHBB6o8fz0B3Y4Gkg_Jx21Oa9E4-D7Knw?e=D0Kpdg)
-
 ## Aplicação em tempo real
 
 ### Android usuário padrão
@@ -87,6 +89,9 @@ Repositórios utilizados no desenvolvimento da aplicação
 
 ### Android usuário admin
 ![android](./assets/gif/core_android_admin.gif)
+
+### Android login com conta social
+![android](./assets/gif/android_login_social.gif)
 
 ### iOS
 ![ios](./assets/gif/core_ios.gif)
