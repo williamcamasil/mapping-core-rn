@@ -12,16 +12,16 @@
 
 ## Contexto
 
-O Myspace tem se tornado uma aplicação cada vez mais utilizada, a qual a manutenção, desenvolvimento de novas features e distribuição das tarefas entre as equipes tem se mostrado verdadeiros desafios. Para manter a qualidade, performance e expansão de novas funcionalidades, julga se necessário alterar sua arquitetura para uma arquitetura em camadas, semelhante ao de microfrontends, a qual permitirá a colaboração entre as equipes de maneira mais ágil e fluída.
+O Myspace tem se tornado uma aplicação cada vez mais utilizada, a qual a manutenção, desenvolvimento de novas features e distribuição das tarefas entre as equipes tem se mostrado verdadeiros desafios. Para manter a qualidade, performance e expansão de novas funcionalidades, julga se necessário alterar sua arquitetura para uma arquitetura modularizada, semelhante ao de microfrontends, a qual permitirá a colaboração entre as equipes de maneira mais ágil e fluída.
 
 ## Declaração do desafio
 
-Desenvolver uma aplicação utilizando uma arquitetura baseada em microfrontends junto aos conceitos de offline fisrt, nesta aplicação deve ser possível realizar o login social como Google, Facebook e conta Microsoft utilizado na DB1. É esperado que a aplicação respeite os princípios SOLID e que seja utilizada uma arquitetura que faça com que o código seja independente do framework utilizado, sendo possível a reutilização de grande parte do código gerado em outras aplicações ou frameworks.
+Desenvolver uma aplicação utilizando uma arquitetura baseada em microfrontends junto aos conceitos de offline fisrt, nesta aplicação deve ser possível realizar o login social como Google, Facebook ou conta Microsoft utilizado na DB1. É esperado que a aplicação respeite os princípios SOLID e que seja utilizada uma arquitetura que faça com que o código seja independente do framework utilizado, sendo possível a reutilização de grande parte do código gerado em outras aplicações ou frameworks.
 
 ## Decisões chaves
 
-- Arquitetura em camadas facilita o gerenciamento dos diferentes módulos
-- Manutenibilidade, testes unitários e de integração, expansão em novas camadas e desenvolvimento de novas funcionalidades
+- Arquitetura modularizada facilita o gerenciamento dos diferentes módulos
+- Manutenibilidade, testes unitários e de integração, expansão em novas módulos e desenvolvimento de novas funcionalidades
 - Permite que o projeto tenha elasticidade tanto na formação quanto na diminuição dos times a depender dos objetivos
 - Separação entre os módulos sobre o que diz respeito as configurações, funcionalidades e responsabilidades que cada um tem sobre o projeto como um todo
 
@@ -56,10 +56,11 @@ Aplicação funcional, módulos separadas e funcionando de maneira independente 
 
 ## Principais desafios & evoluções
 
-- Organização e orquestração no desenvolvimento das tarefas
 - Arquitetura, configurações de ambiente e integração entre os módulos
-- Gerenciamento de tempo para a finalização das tarefas
 - Limitação técnica para determinadas funcionalidades
+- Organização e orquestração no desenvolvimento das tarefas
+- Gerenciamento de tempo para a finalização das tarefas
+- Conhecimento técnico adquirido na prática
 
 ## Repositórios
 
