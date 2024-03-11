@@ -7,8 +7,8 @@
 
 ## Utilitários
 
-- [Figma e design](https://www.figma.com/file/y427586uuFXcvODlMgNTtU/MySpace_Desafio?type=design&node-id=96-529&mode=design&t=B4YIplPTnrZy1MV8-0)
 - [Backlog](https://db1global-my.sharepoint.com/:x:/g/personal/william_camargo_db1_com_br/EXWyP3xPMpxAkyHBB6o8fz0B3Y4Gkg_Jx21Oa9E4-D7Knw?e=D0Kpdg)
+- [Figma e design](https://www.figma.com/file/y427586uuFXcvODlMgNTtU/MySpace_Desafio?type=design&node-id=96-529&mode=design&t=B4YIplPTnrZy1MV8-0)
 
 ## Contexto
 
@@ -98,3 +98,9 @@ Repositórios utilizados no desenvolvimento da aplicação
 
 ## Cobertura do código
 ![testes](./assets/img/testes.png)
+
+## Referencias
+- [Documentação Firebase com React Native](https://rnfirebase.io/)
+- [Documentação Firebase Autenticação](https://rnfirebase.io/auth/social-auth)
+- [Documentação Google Sign in](https://github.com/react-native-google-signin/google-signin?tab=readme-ov-file#project-setup-and-initialization)
+
