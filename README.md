@@ -21,7 +21,7 @@ Desenvolver uma aplicação utilizando uma arquitetura baseada em microfrontends
 ## Decisões chaves
 
 - Arquitetura modularizada facilita o gerenciamento dos diferentes módulos
-- Manutenibilidade, testes unitários e de integração, expansão em novas módulos e desenvolvimento de novas funcionalidades
+- Manutenibilidade, testes unitários e de integração, expansão em novos módulos e desenvolvimento de novas funcionalidades
 - Permite que o projeto tenha elasticidade tanto na formação quanto na diminuição dos times a depender dos objetivos
 - Separação entre os módulos sobre o que diz respeito as configurações, funcionalidades e responsabilidades que cada um tem sobre o projeto como um todo
 
